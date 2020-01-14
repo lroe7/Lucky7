@@ -28,11 +28,19 @@ int main()
 
 	//2. Write a program that calculates and prints the sum of the first 
 	//50 positive integers that are multiples of 7.
-	int sum = 0; 
+	/*int sum = 0; 
 	for (int i = 1; i <= 50; i++)
 	{
 		sum += i * 7;
 	}
-	cout << "The sum of tge first 50 positive integers that are multiples of 7 is " << sum << endl;
+	cout << "The sum of tge first 50 positive integers that are multiples of 7 is " << sum << endl;*/
+
+	//3. Write a program that calculates and prints the first 10 terms of the factorial sequence
+	int factorial = 1;
+	for (int i = 1; i <= 10; i++)
+	{
+		factorial *= i;
+		cout << i << "! = " << factorial << endl;
+	}
 	return 0;
 }
