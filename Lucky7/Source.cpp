@@ -45,7 +45,7 @@ int main()
 	}*/
 
 	//4. Write a program that reads in a string and determines whether it is a palindrome
-	cout << "Please enter a string: " << endl;
+	/*cout << "Please enter a string: " << endl;
 	string str;
 	cin >> str;
 	int count = 0;
@@ -64,6 +64,24 @@ int main()
 	if (count == str.size())
 	{
 		cout << str << " is a palindrome." << endl;
+	}*/
+	//5. Write a program that reads in a positive integer and determines whether it is a prime number.
+	cout << "Please enter a number: " << endl;
+	int num;
+	cin >> num;
+	bool isPrime = true;
+	for(int i = num-1; i >= 2; i--)
+	{
+		if (num % i == 0)
+		{
+			isPrime = false;
+			cout << num << " is not a prime number" << endl;
+			break;
+		}
+	}
+	if (isPrime == true)
+	{
+		cout << num << " is a prime number" << endl;
 	}
 	return 0;
 }
