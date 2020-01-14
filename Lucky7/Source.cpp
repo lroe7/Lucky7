@@ -2,12 +2,13 @@
 //This is my own work
 
 #include <iostream>
+#include <string>
 
 using namespace std;
 
 int main()
 {
-	// Write a program that reads in 5 integers and prints the largest and the smallest of the group.
+	// 1. Write a program that reads in 5 integers and prints the largest and the smallest of the group.
 	/*int a, b, c, d, e;
 	cout << "Enter 5 integers: " << endl;
 	cin >> a >> b >> c >> d >> e;
@@ -36,11 +37,33 @@ int main()
 	cout << "The sum of tge first 50 positive integers that are multiples of 7 is " << sum << endl;*/
 
 	//3. Write a program that calculates and prints the first 10 terms of the factorial sequence
-	int factorial = 1;
+	/*int factorial = 1;
 	for (int i = 1; i <= 10; i++)
 	{
 		factorial *= i;
 		cout << i << "! = " << factorial << endl;
+	}*/
+
+	//4. Write a program that reads in a string and determines whether it is a palindrome
+	cout << "Please enter a string: " << endl;
+	string str;
+	cin >> str;
+	int count = 0;
+	for (int i = 0; i < str.size(); i++)
+	{
+		if (str[i] != str[str.size() - 1 - i])
+		{
+			cout << str << " is not a palindrome." << endl;
+			break;
+		}
+		else
+		{
+			count++;
+		}
+	}
+	if (count == str.size())
+	{
+		cout << str << " is a palindrome." << endl;
 	}
 	return 0;
 }
