@@ -8,7 +8,7 @@ using namespace std;
 int main()
 {
 	// Write a program that reads in 5 integers and prints the largest and the smallest of the group.
-	int a, b, c, d, e;
+	/*int a, b, c, d, e;
 	cout << "Enter 5 integers: " << endl;
 	cin >> a >> b >> c >> d >> e;
 	cout << "The numbers are " <<a <<" "<<b<<" "<<c<<" "<<d<<" "<<e<< endl;
@@ -24,8 +24,15 @@ int main()
 	if (c < smallest) smallest = c;
 	if (d < smallest) smallest = d;
 	if (e < smallest) smallest = e;
-	cout << "The smallest number is " << smallest << endl;
+	cout << "The smallest number is " << smallest << endl;*/
 
-	
+	//2. Write a program that calculates and prints the sum of the first 
+	//50 positive integers that are multiples of 7.
+	int sum = 0; 
+	for (int i = 1; i <= 50; i++)
+	{
+		sum += i * 7;
+	}
+	cout << "The sum of tge first 50 positive integers that are multiples of 7 is " << sum << endl;
 	return 0;
 }
