@@ -66,7 +66,7 @@ int main()
 		cout << str << " is a palindrome." << endl;
 	}*/
 	//5. Write a program that reads in a positive integer and determines whether it is a prime number.
-	cout << "Please enter a number: " << endl;
+	/*cout << "Please enter a number: " << endl;
 	int num;
 	cin >> num;
 	bool isPrime = true;
@@ -82,6 +82,21 @@ int main()
 	if (isPrime == true)
 	{
 		cout << num << " is a prime number" << endl;
+	}*/
+	//6. Write a program that creates an array of integers using an initialization list and 
+	//calculates and displays the average of the values.
+	int sum = 0;
+	int count = 0;
+	int a, b, c, d, e;
+	cout << "Please enter 5 integers: " << endl;
+	cin >> a >> b >> c >> d >> e;
+	int arr[] = { a, b, c, d, e };
+	for (int i = 0; i < sizeof(arr)/4; i++)
+	{
+		sum += arr[i];
+		count++;
 	}
+	int average = sum / count;
+	cout <<"The average of ["<<a<<", "<<b<<", "<<c<<", "<<d<<", "<<e<<"] is "<<average<<endl;
 	return 0;
 }
