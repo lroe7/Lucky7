@@ -85,7 +85,7 @@ int main()
 	}*/
 	//6. Write a program that creates an array of integers using an initialization list and 
 	//calculates and displays the average of the values.
-	int sum = 0;
+	double sum = 0.0;
 	int count = 0;
 	int a, b, c, d, e;
 	cout << "Please enter 5 integers: " << endl;
@@ -96,7 +96,7 @@ int main()
 		sum += arr[i];
 		count++;
 	}
-	int average = sum / count;
+	double average = sum / count;
 	cout <<"The average of ["<<a<<", "<<b<<", "<<c<<", "<<d<<", "<<e<<"] is "<<average<<endl;
 	return 0;
 }
